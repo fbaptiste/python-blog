@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 notebook = "*"
+pandas = "<1.5.0"
+tabulate = "==0.8.9"
+numpy = "<1.23.0"
 
 [dev-packages]
 
