@@ -1,6 +1,6 @@
 # Python Blog
 
-These are resources that correspond to my Python blog videos located [here](https://www.youtube.com/playlist?list=PL9_iFHfnv8hB5I0lhK463F3k-HUJV-Xxj).
+These are resources that correspond to my Python blog videos located [here](https://www.youtube.com/channel/UCOsGw17tMhM4-GBjvQnXGzQ).
 
 Some of my other Python related repos you might be interested in:
 - [Python 3 deep dive](https://github.com/fbaptiste/python-deepdive)
