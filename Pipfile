@@ -9,8 +9,13 @@ pandas = "<1.5.0"
 tabulate = "==0.8.9"
 numpy = "<1.23.0"
 pyperclip = "==1.8.2"
+jupyterthemes = "*"
+pydantic = "*"
+python-dateutil = "*"
 
 [dev-packages]
+black = "*"
+isort = "*"
 
 [requires]
 python_version = "3.10"
