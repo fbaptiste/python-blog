@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John von Neumann",
+    "placeOfBirth": "Hungary",
+    "bornYear": 1903
+  },
+  {
+    "name": "Isaac Newton",
+    "placeOfBirth": "United Kingdom",
+    "bornYear": 1643
+  },
+  {
+    "name": "Richard Feynman",
+    "placeOfBirth": "United States",
+    "bornYear": 1918
+  },
+  {
+    "name": "Albert Einstein",
+    "placeOfBirth": "Germany",
+    "bornYear": 1879
+  },
+  {
+    "name": "Subrahmanyan Chandrasekhar",
+    "placeOfBirth": "Pakistan",
+    "bornYear": 1910
+  }
+]

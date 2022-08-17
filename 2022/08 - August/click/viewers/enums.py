@@ -1,0 +1,28 @@
+from enum import Enum
+
+
+class TableFormat(Enum):
+    fancy_grid = "fancy_grid"
+    fancy_outline = "fancy_outline"
+    github = "github"
+    grid = "grid"
+    html = "html"
+    jira = "jira"
+    latex = "latex"
+    latex_booktabs = "latex_booktabs"
+    latex_longtable = "latex_longtable"
+    latex_raw = "latex_raw"
+    mediawiki = "mediawiki"
+    moinmoin = "moinmoin"
+    orgtbl = "orgtbl"
+    pipe = "pipe"
+    plain = "plain"
+    presto = "presto"
+    pretty = "pretty"
+    psql = "psql"
+    rst = "rst"
+    simple = "simple"
+    textile = "textile"
+    tsv = "tsv"
+    unsafehtml = "unsafehtml"
+    youtrack = "youtrack2"

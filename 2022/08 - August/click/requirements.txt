@@ -1,0 +1,7 @@
+# this project was created using Python 3.10 - YMMV if using a different version.
+
+click
+setuptools
+tabulate
+isort
+black
