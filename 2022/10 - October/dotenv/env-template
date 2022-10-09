@@ -1,0 +1,4 @@
+SWAPI_BASE_URL=https://swapi.dev/api
+SWAPI_FILMS=${SWAPI_BASE_URL}/films
+SECRET_1=
+SECRET_2=
