@@ -13,6 +13,8 @@ jupyterthemes = "*"
 pydantic = "*"
 python-dateutil = "*"
 humanize = "*"
+faker = "*"
+faker-airtravel = "*"
 
 [dev-packages]
 black = "*"
