@@ -1,0 +1,16 @@
+---
+version: '3'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis_queue
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass secret
+    volumes:
+      - data-volume:/data
+
+volumes:
+  data-volume:

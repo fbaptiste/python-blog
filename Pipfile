@@ -17,6 +17,7 @@ faker = "*"
 faker-airtravel = "*"
 jupytext = "*"
 matplotlib = "*"
+redis = "*"
 
 [dev-packages]
 black = "*"
