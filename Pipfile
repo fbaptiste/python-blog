@@ -19,6 +19,7 @@ jupytext = "*"
 matplotlib = "*"
 redis = "*"
 requests = "*"
+pyhumps = "*"
 
 [dev-packages]
 black = "*"
