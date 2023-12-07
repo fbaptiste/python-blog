@@ -6,6 +6,7 @@ Some of my other Python related repos you might be interested in:
 
 - [Python Fundamentals](https://github.com/fbaptiste/python-fundamentals) - code repo for my Python Fundamentals course
 - [Python 3 Deep Dive](https://github.com/fbaptiste/python-deepdive) - code repo for my Python Deep Dive courses
+- [Pydantic V2: Essentials](https://github.com/fbaptiste/pydantic-essentials) - code repo for my Pydantic V2 course
 - [Python Primer](https://github.com/fbaptiste/python-primer) - quick intro to Python for developers with experience in another language (such as Java)
 
 My online courses (all on Udemy):
