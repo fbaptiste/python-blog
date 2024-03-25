@@ -1,0 +1,13 @@
+observer:
+  latitude: 33.4
+  longitude: -111.8
+  horizon_file: data/horizon.csv
+
+catalog:
+  file: data/dso_catalog.csv
+  categories:
+    - emission_nebula
+    - reflection_nebula
+    - hii_regions
+    - galaxies
+    - galaxy_clusters
