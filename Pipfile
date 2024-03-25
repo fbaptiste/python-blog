@@ -21,6 +21,12 @@ redis = "*"
 requests = "*"
 pyhumps = "*"
 arrow = "*"
+wrapt = "*"
+pyyaml = "*"
+charset-normalizer = "*"
+pyjwt = "*"
+multidict = "*"
+jupyterlab = "*"
 
 [dev-packages]
 black = "*"
