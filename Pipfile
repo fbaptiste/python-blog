@@ -27,6 +27,7 @@ charset-normalizer = "*"
 pyjwt = "*"
 multidict = "*"
 jupyterlab = "*"
+python-benedict = {extras = ["all"], version = "*"}
 
 [dev-packages]
 black = "*"
