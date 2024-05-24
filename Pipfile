@@ -28,6 +28,7 @@ pyjwt = "*"
 multidict = "*"
 jupyterlab = "*"
 python-benedict = {extras = ["all"], version = "*"}
+tenacity = "*"
 
 [dev-packages]
 black = "*"
