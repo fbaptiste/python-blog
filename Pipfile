@@ -29,6 +29,8 @@ multidict = "*"
 jupyterlab = "*"
 python-benedict = {extras = ["all"], version = "*"}
 tenacity = "*"
+psycopg = {extras = ["binary"], version = "*"}
+yoyo-migrations = "*"
 
 [dev-packages]
 black = "*"
