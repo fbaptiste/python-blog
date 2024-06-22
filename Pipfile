@@ -31,6 +31,8 @@ python-benedict = {extras = ["all"], version = "*"}
 tenacity = "*"
 psycopg = {extras = ["binary"], version = "*"}
 yoyo-migrations = "*"
+icecream = "*"
+executing = ">=2.0.0"
 
 [dev-packages]
 black = "*"
