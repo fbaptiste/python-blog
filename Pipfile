@@ -33,6 +33,8 @@ psycopg = {extras = ["binary"], version = "*"}
 yoyo-migrations = "*"
 icecream = "*"
 executing = ">=2.0.0"
+tdqm = "*"
+ipywidgets = "*"
 
 [dev-packages]
 black = "*"
