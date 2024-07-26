@@ -1,0 +1,36 @@
+---
+version: 1
+
+formatters:
+  simple:
+    style: "{"
+    format: "{asctime} - {name} - {levelname} - {message}"
+  special:
+    style: "{"
+    format: "Special handling: {asctime} - {name} - {levelname} - {message}"
+
+filters:
+  'my_filter':
+    '()': __main__.CustomFilter  # () simply tells logging system that this is a callable
+    'arg_name': 'my_arg'
+    'arg_threshold': 100
+
+handlers:
+  console:
+    formatter: simple
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+  special:
+    level: WARNING
+    formatter: special
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+    filters: ['my_filter']
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [console, special]
+
+  app:
+    level: INFO

@@ -1,0 +1,23 @@
+---
+version: 1
+
+formatters:
+  file_formatter:
+    style: "{"
+    format: "{asctime} - {name} - {levelname} - {module} - {funcName} - {message}"
+
+handlers:
+  rotating_file:
+    formatter: file_formatter
+    class: logging.handlers.RotatingFileHandler
+    filename: logs/app.log
+    maxBytes: 1000
+    backupCount: 3
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [rotating_file]
+
+  app:
+    level: INFO

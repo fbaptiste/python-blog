@@ -1,0 +1,30 @@
+---
+version: 1
+
+formatters:
+  file_formatter:
+    format: '{"time": "%(asctime)s", "logger": "%(name)s", "level": "%(levelname)s", "message": "%(message)s"}'
+  console_formatter:
+    style: "{"
+    format: "{asctime} - {name} - {levelname} - {module} - {funcName} - {message}"
+
+handlers:
+  rotating_file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: file_formatter
+    filename: logs/app.log
+    maxBytes: 1000
+    backupCount: 3
+
+  console:
+    level: WARNING
+    class: logging.StreamHandler
+    formatter: console_formatter
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [rotating_file, console]
+
+  app:
+    level: INFO

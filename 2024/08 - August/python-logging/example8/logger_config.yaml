@@ -1,0 +1,21 @@
+---
+version: 1
+
+formatters:
+  simple:
+    style: "{"
+    format: "{asctime} - {name} - {levelname} - {message} (arg1={arg1}, arg2={arg2})"
+
+handlers:
+  console:
+    formatter: simple
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [console]
+
+  app:
+    level: DEBUG

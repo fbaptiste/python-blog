@@ -1,0 +1,24 @@
+---
+version: 1
+
+formatters:
+  json:
+    "()": __main__.JSONFormatter
+
+handlers:
+  console:
+    formatter: json
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+  file:
+    formatter: json
+    class: logging.FileHandler
+    filename: logs/app.log
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [console, file]
+
+  app:
+    level: INFO

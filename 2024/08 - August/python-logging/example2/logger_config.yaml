@@ -1,0 +1,27 @@
+---
+version: 1  # this is needed, and is always 1 (at least at this time)
+disable_existing_loggers: true  # turn off any existing loggers - this is the default, so don't actually need this
+
+# Define one or more formatters
+# You can name them whatever you want, here I chose to name it `simple`
+formatters:
+  simple:
+    style: "{"
+    format: "SIMPLE FORMATTER: {asctime} - {name} - {levelname} - {message}"
+
+# Define one or more handlers
+# You can name them whatever you want, here I chose to name it `console`
+handlers:
+  console:
+    formatter: simple
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+
+# Configure root logger, and app logger
+loggers:
+  root:
+    level: DEBUG
+    handlers: [console]
+
+  app:
+    level: INFO

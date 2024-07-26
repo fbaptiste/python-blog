@@ -1,0 +1,22 @@
+---
+version: 1
+
+formatters:
+  file_formatter:
+    style: "{"
+    format: "{asctime} - {name} - {levelname} - {module} - {funcName} - {message}"
+
+handlers:
+  simple_file:
+    formatter: file_formatter
+    class: logging.FileHandler
+    filename: logs/example4.log
+    mode: a
+
+loggers:
+  root:
+    level: DEBUG
+    handlers: [simple_file]
+
+  app:
+    level: INFO
