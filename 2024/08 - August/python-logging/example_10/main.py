@@ -21,6 +21,7 @@ can go wrong or functionality that gets deprecated over time. Basically, if I ca
 quickly and effectively, I'll do it myself, rather than rely on a library. Enough with the soapbox!
 """
 
+import inspect
 import json
 import logging
 import logging.config
@@ -73,7 +74,17 @@ class JSONFormatter(logging.Formatter):
                 if record.stack_info
                 else None
             ),
+
         }
+
+        # Identify attributes that were passed in extras - no direct way to do this, so we'll
+        # compare what a regular log record without any extras looks like, and identify keys
+        # in the current log record that are not present in the plain-vanilla log record.
+        blank_record = logging.LogRecord("", 0, "", 0, "", (), None)
+        standard_fields = {key for key, _ in inspect.getmembers(blank_record)}
+        for key, value in inspect.getmembers(record):
+            if key not in standard_fields:
+                log_dict[key] = value
 
         return json.dumps(log_dict)
 

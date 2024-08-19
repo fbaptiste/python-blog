@@ -8,7 +8,7 @@ But, when we move to production, we probably do not want an exception in our log
 
 We can tell the logging library to suppress these exceptions, and let our app continue running uninterrupted, by
 setting a flag, at the library level: logging.raiseExceptions = False. Unfortunately, we this flag does not seem
-supported in the dit config, so we have to do this in code (so we'd probably want to use an ENV var in order to easily
+to be supported in the dict config, so we have to do this in code (so we'd probably want to use an ENV var in order to easily
 set it differently in various environments)
 
 The app will continue running in both cases, but in the latter case, we won't see the
